@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dynatrace
+  namespace : platform-ops
+spec:
+  containers:
+    - command:
+        - sleep
+        - "3600"
+      image: busybox
+      name: dynatrace
